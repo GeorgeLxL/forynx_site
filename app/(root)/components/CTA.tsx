@@ -17,7 +17,7 @@ export default function CTA() {
   }
 
   return (
-    <section id="contact" className="py-28 border-t" style={{ background: "var(--bg-base)", borderColor: "var(--border)" }}>
+    <section id="contact" className="py-28 border-t" style={{ background: "var(--accent-muted)", borderColor: "var(--border)" }}>
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
 
         {/* Left */}
@@ -28,8 +28,8 @@ export default function CTA() {
           <p className="text-lg" style={{ color: "var(--text-muted)" }}>
             Let's build a system that actually fits your business. Free 15-min call — no commitment.
           </p>
-          <div className="flex flex-col gap-3 pt-2">
-            <a href="mailto:hello@forynx.io"
+          <div className="flex flex-col items-start gap-3 pt-2">
+            <a href="mailto:sato.takeru6611@gmail.com"
               className="inline-flex items-center gap-3 text-sm font-medium"
               style={{ color: "var(--text-primary)" }}>
               <span className="w-9 h-9 rounded-lg flex items-center justify-center border"
@@ -38,9 +38,10 @@ export default function CTA() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </span>
-              hello@forynx.io
+              Email us
             </a>
-            <a href="#"
+            <a href="https://calendar.app.google/iZtfBu3tyDyoLPdG8"
+              target="_blank"
               className="inline-flex items-center gap-3 text-sm font-medium"
               style={{ color: "var(--text-primary)" }}>
               <span className="w-9 h-9 rounded-lg flex items-center justify-center border"

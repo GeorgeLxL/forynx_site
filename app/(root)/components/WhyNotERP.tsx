@@ -3,7 +3,7 @@ const ourPros = ["Fixed price from £5,000", "Delivered in 2–4 weeks", "We han
 
 export default function WhyNotERP() {
   return (
-    <section className="py-28 border-t" style={{ background: "var(--bg-base)", borderColor: "var(--border)" }}>
+    <section className="py-28 border-t" style={{ background: "var(--bg-raised)", borderColor: "var(--border)" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--accent)" }}>Why Not ERP?</p>

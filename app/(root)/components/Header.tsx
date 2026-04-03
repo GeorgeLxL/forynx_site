@@ -8,18 +8,28 @@ export default function Navbar() {
   const { theme, toggle } = useTheme();
 
   return (
-    <nav
+    <header
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur border-b"
       style={{ background: "color-mix(in srgb, var(--bg-base) 80%, transparent)", borderColor: "var(--border)" }}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="relative h-9 w-[120px]">
-          <Image src="/logo.png" alt="ForyNX" fill className="object-contain light-hide" priority />
-          <Image src="/logo_light.png" alt="ForyNX" fill className="object-contain dark-hide" priority />
-        </span>
+        <a href="#" className="relative h-9 w-[120px]">
+          <Image src="/logo.png" alt="ForyNX" fill className="object-contain dark-hide" priority />
+          <Image src="/logo_light.png" alt="ForyNX" fill className="object-contain light-hide" priority />
+        </a>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-6">
+          <a href="#problem" className="text-sm transition-colors" style={{ color: "var(--text-muted)" }}
+            onMouseEnter={e => (e.currentTarget.style.color = "var(--text-primary)")}
+            onMouseLeave={e => (e.currentTarget.style.color = "var(--text-muted)")}>
+            Problem
+          </a>
+          <a href="#solution" className="text-sm transition-colors" style={{ color: "var(--text-muted)" }}
+            onMouseEnter={e => (e.currentTarget.style.color = "var(--text-primary)")}
+            onMouseLeave={e => (e.currentTarget.style.color = "var(--text-muted)")}>
+            Solution
+          </a>
           <a href="#pricing" className="text-sm transition-colors" style={{ color: "var(--text-muted)" }}
             onMouseEnter={e => (e.currentTarget.style.color = "var(--text-primary)")}
             onMouseLeave={e => (e.currentTarget.style.color = "var(--text-muted)")}>
@@ -85,6 +95,6 @@ export default function Navbar() {
           <a href="#contact" className="text-sm font-medium" style={{ color: "var(--text-primary)" }} onClick={() => setOpen(false)}>Book a call</a>
         </div>
       )}
-    </nav>
+    </header>
   );
 }

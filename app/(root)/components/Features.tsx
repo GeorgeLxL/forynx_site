@@ -60,22 +60,22 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-28 border-t" style={{ background: "var(--bg-base)", borderColor: "var(--border)" }}>
+    <section className="py-28 border-t" style={{ background: "var(--bg-alt)", borderColor: "var(--bg-alt-border)" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--accent)" }}>What You Get</p>
-          <h2 className="text-3xl md:text-4xl font-bold" style={{ color: "var(--text-primary)" }}>Everything your team needs</h2>
+          <h2 className="text-3xl md:text-4xl font-bold" style={{ color: "var(--bg-alt-text)" }}>Everything your team needs</h2>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((f) => (
             <div key={f.title} className="rounded-2xl p-6 flex flex-col gap-3 border transition-colors"
-              style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
-              onMouseEnter={e => (e.currentTarget.style.borderColor = "color-mix(in srgb, var(--accent) 50%, transparent)")}
-              onMouseLeave={e => (e.currentTarget.style.borderColor = "var(--border)")}>
+              style={{ background: "var(--bg-alt-card)", borderColor: "var(--bg-alt-border)" }}
+              onMouseEnter={e => (e.currentTarget.style.borderColor = "color-mix(in srgb, var(--accent) 60%, transparent)")}
+              onMouseLeave={e => (e.currentTarget.style.borderColor = "var(--bg-alt-border)")}>
               <div style={{ color: "var(--accent)" }}>{f.icon}</div>
-              <h3 className="font-semibold" style={{ color: "var(--text-primary)" }}>{f.title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>{f.desc}</p>
+              <h3 className="font-semibold" style={{ color: "var(--bg-alt-text)" }}>{f.title}</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--bg-alt-muted)" }}>{f.desc}</p>
             </div>
           ))}
         </div>

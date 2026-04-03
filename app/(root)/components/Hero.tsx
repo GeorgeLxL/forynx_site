@@ -8,7 +8,7 @@ export default function Hero() {
           <div className="inline-flex w-fit items-center gap-2 rounded-full px-4 py-1.5 text-xs border"
             style={{ background: "var(--bg-card)", borderColor: "var(--border)", color: "var(--text-muted)" }}>
             <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "var(--accent)" }} />
-            Built for manufacturing &amp; wholesale
+            For manufacturing, logistics &amp; wholesale
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight" style={{ color: "var(--text-primary)" }}>
@@ -18,8 +18,8 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg leading-relaxed max-w-md" style={{ color: "var(--text-muted)" }}>
-            We build simple ERP-lite systems for manufacturing and wholesale teams to replace
-            spreadsheets, manual workflows, and outdated tools.
+            We build simple ERP-lite systems for manufacturing, logistics and wholesale teams to replace
+            spreadsheets, google calendars, manual workflows, and outdated tools.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">

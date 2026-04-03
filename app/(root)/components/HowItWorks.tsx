@@ -18,7 +18,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-28 border-t" style={{ background: "var(--bg-base)", borderColor: "var(--border)" }}>
+    <section id="how-it-works" className="py-28 border-t" style={{ background: "var(--bg-raised)", borderColor: "var(--border)" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--accent)" }}>Process</p>

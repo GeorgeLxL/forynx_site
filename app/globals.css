@@ -7,20 +7,35 @@ html {
 :root,
 [data-theme="dark"] {
   --bg-base: #0F172A;
+  --bg-alt: #020817;
+  --bg-raised: #1E293B;
   --bg-card: #1E293B;
   --border: #334155;
   --text-primary: #F8FAFC;
   --text-muted: #94A3B8;
   --accent: #2563EB;
+  --accent-muted: rgba(37,99,235,0.12);
+  /* alt section text (same as primary in dark) */
+  --bg-alt-text: #F8FAFC;
+  --bg-alt-muted: #94A3B8;
+  --bg-alt-card: #0F172A;
+  --bg-alt-border: #334155;
 }
 
 [data-theme="light"] {
-  --bg-base: #F8FAFC;
+  --bg-base: #FFFFFF;
+  --bg-alt: #F1F5F9;
+  --bg-raised: #EFF6FF;
   --bg-card: #FFFFFF;
   --border: #E2E8F0;
   --text-primary: #0F172A;
   --text-muted: #64748B;
   --accent: #2563EB;
+  --accent-muted: rgba(37,99,235,0.06);
+  --bg-alt-text: #0F172A;
+  --bg-alt-muted: #64748B;
+  --bg-alt-card: #FFFFFF;
+  --bg-alt-border: #E2E8F0;
 }
 
 body {
@@ -28,10 +43,6 @@ body {
   color: var(--text-primary);
 }
 
-[data-theme="dark"] .light-hide {
-  display: none;
-}
-
-[data-theme="light"] .dark-hide {
-  display: none;
-}
+/* Logo visibility per theme */
+[data-theme="dark"] .dark-hide  { display: none; }
+[data-theme="light"] .light-hide { display: none; }

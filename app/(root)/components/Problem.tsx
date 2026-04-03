@@ -39,25 +39,25 @@ const problems = [
 
 export default function Problem() {
   return (
-    <section className="py-28" style={{ background: "var(--bg-base)" }}>
+    <section id="problem" className="py-28" style={{ background: "var(--bg-alt)" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "var(--bg-alt-text)" }}>
             Most operations are still held together<br className="hidden md:block" /> by spreadsheets
           </h2>
-          <p className="max-w-xl mx-auto" style={{ color: "var(--text-muted)" }}>
+          <p className="max-w-xl mx-auto" style={{ color: "var(--bg-alt-muted)" }}>
             Sound familiar? You're not alone — and it's not your fault. The tools just weren't built for your workflow.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {problems.map((p) => (
             <div key={p.title} className="rounded-2xl p-6 flex gap-4 border"
-              style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}>
+              style={{ background: "var(--bg-alt-card)", borderColor: "var(--bg-alt-border)" }}>
               <div className="mt-0.5 shrink-0" style={{ color: "var(--accent)" }}>{p.icon}</div>
               <div>
-                <h3 className="font-semibold mb-1" style={{ color: "var(--text-primary)" }}>{p.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>{p.text}</p>
+                <h3 className="font-semibold mb-1" style={{ color: "var(--bg-alt-text)" }}>{p.title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: "var(--bg-alt-muted)" }}>{p.text}</p>
               </div>
             </div>
           ))}

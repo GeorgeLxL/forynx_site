@@ -7,7 +7,7 @@ const bullets = [
 
 export default function Solution() {
   return (
-    <section className="py-28 border-t" style={{ background: "var(--bg-base)", borderColor: "var(--border)" }}>
+    <section id="solution" className="py-28 border-t" style={{ background: "var(--bg-base)", borderColor: "var(--border)" }}>
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         {/* Left */}
         <div className="flex flex-col gap-6">
