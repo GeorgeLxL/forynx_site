@@ -36,6 +36,15 @@ export default function Navbar() {
             Pricing
           </a>
           <a
+            href="https://demoforynx.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium px-4 py-2 rounded-lg transition-colors border"
+            style={{ borderColor: "var(--border)", color: "var(--text-primary)" }}
+          >
+            Try demo
+          </a>
+          <a
             href="#contact"
             className="text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
             style={{ background: "var(--accent)" }}
@@ -91,7 +100,10 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden border-t px-6 py-4 flex flex-col gap-4"
           style={{ borderColor: "var(--border)", background: "var(--bg-base)" }}>
+          <a href="#problem" className="text-sm" style={{ color: "var(--text-muted)" }} onClick={() => setOpen(false)}>Problem</a>
+          <a href="#solution" className="text-sm" style={{ color: "var(--text-muted)" }} onClick={() => setOpen(false)}>Solution</a>
           <a href="#pricing" className="text-sm" style={{ color: "var(--text-muted)" }} onClick={() => setOpen(false)}>Pricing</a>
+          <a href="https://demoforynx.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>Try demo</a>
           <a href="#contact" className="text-sm font-medium" style={{ color: "var(--text-primary)" }} onClick={() => setOpen(false)}>Book a call</a>
         </div>
       )}
