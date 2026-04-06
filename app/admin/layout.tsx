@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import AdminSidebar from "./components/AdminSidebar";
 import { ThemeProvider, useTheme } from "../(root)/components/ThemeProvider";
+import PushToggle from "./components/PushToggle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,9 @@ function AdminShell({ children }: { children: React.ReactNode }) {
           <header className="h-16 border-b flex items-center justify-between px-6 shrink-0"
             style={{ borderColor: "var(--border)", background: "var(--bg-card)" }}>
             <span className="text-sm font-medium" style={{ color: "var(--text-muted)" }}>Admin Panel</span>
-            <button onClick={toggle} aria-label="Toggle theme"
+            <div className="flex items-center gap-2">
+              <PushToggle />
+              <button onClick={toggle} aria-label="Toggle theme"
               className="w-9 h-9 rounded-lg flex items-center justify-center transition-colors"
               style={{ background: "var(--bg-base)", border: "1px solid var(--border)", color: "var(--text-muted)" }}>
               {theme === "dark" ? (
@@ -31,6 +34,7 @@ function AdminShell({ children }: { children: React.ReactNode }) {
                 </svg>
               )}
             </button>
+            </div>
           </header>
           <main className="flex-1 overflow-y-auto p-6">
             {children}
