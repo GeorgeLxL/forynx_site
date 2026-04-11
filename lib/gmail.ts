@@ -40,7 +40,10 @@ export async function sendEmail({
     body: JSON.stringify({ raw: encoded }),
   });
 
-  if (!res.ok) throw new Error(await res.text());
+  if (!res.ok) {
+    const errText = await res.text();
+    throw new Error(`Gmail API error: ${res.status} - ${errText}`);
+  }
   return res.json();
 }
 

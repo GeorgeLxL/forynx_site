@@ -15,6 +15,10 @@ export async function POST(req: NextRequest) {
     body = data?.content ?? "";
   }
 
-  await sendEmail({ to, subject, html: body });
-  return NextResponse.json({ ok: true });
+  try {
+    await sendEmail({ to, subject, html: body });
+    return NextResponse.json({ ok: true });
+  } catch (e: any) {
+    return NextResponse.json({ error: e.message ?? "Failed to send email" }, { status: 500 });
+  }
 }
