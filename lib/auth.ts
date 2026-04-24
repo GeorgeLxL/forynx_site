@@ -7,7 +7,7 @@ const COOKIE = "admin_session";
 export async function signToken(payload: { userId: string }) {
   return new SignJWT(payload)
     .setProtectedHeader({ alg: "HS256" })
-    .setExpirationTime("7d")
+    .setExpirationTime("30d")
     .sign(secret);
 }
 
