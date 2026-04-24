@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Forynx
 
-## Getting Started
+Forynx is a service that builds lightweight, custom internal systems for manufacturing and wholesale teams.
 
-First, run the development server:
+We replace spreadsheets and fragmented tools with simple, tailored software that matches how your business actually works.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What it does
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Replaces spreadsheet-based workflows  
+- Centralizes inventory and operations  
+- Automates repetitive manual tasks  
+- Provides simple internal dashboards  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Problem
 
-To learn more about Next.js, take a look at the following resources:
+Most teams rely on:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Excel-heavy processes  
+- Disconnected tools  
+- Manual reporting  
+- Slow operational workflows  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This leads to errors, delays, and inefficiency.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Solution
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We design and build custom internal systems that:
+
+- Fit your exact workflow  
+- Reduce manual work  
+- Improve visibility across operations  
+- Replace multiple tools with one system  
+
+---
+
+## How it works
+
+1. Understand your workflow  
+2. Design the system  
+3. Build and deploy it  
+
+---
+
+## Pricing
+
+Custom builds starting from **£5,000**
+
+- One-time payment  
+- Delivered in 2–4 weeks  
+- Fully custom solution  
+
+---
+
+## Why Forynx
+
+- Simple systems, not enterprise software  
+- Built around your workflow  
+- Faster and cheaper than traditional ERP systems  
+
+---
+
+## Contact
+
+Book a short call via the website to discuss your system.
